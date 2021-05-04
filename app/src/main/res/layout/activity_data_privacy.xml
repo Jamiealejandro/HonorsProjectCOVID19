@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data_privacy">
+
+    <include layout="@layout/content_data_privacy" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/ScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/margin_horizontal"
+            android:paddingVertical="@dimen/vertical_margin">
+
+            <TextView
+                style="@style/Title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Protecting your privacy"/>
+
+            <TextView
+                style="@style/Title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="You are in control"/>
+
+            <TextView
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="We value your privacy, meaning the app cannot tell who you are, where you are or who is with you.\n\nIf you test positive for coronavirus, you can choose to share your data with us so we can alert other app users in who have come within proximity to you. By selecting continue we will be able to send notifications to other app users who need to be alerted across these locations." />
+
+            <TextView
+                style="@style/Title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Your data"/>
+
+            <TextView
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="The app securely and anonymously stores data for 14 days after it has been recorded. You can delete data from the app at anytime in your app settings or by uninstalling the app. Your phone may keep some basic data- this is controlled by your phones operating system"/>
+
+            <TextView
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="When you use the app you will be helping your local community stay healthy and you will be saving lives."/>
+
+            <TextView
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:text="Before you activate this app, please read the privacy notice and agree to the terms of use"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/buttonAgree"
+                style="@style/PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I agree"/>
+
+            <TextView
+                android:id="@+id/textNoThanks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="No Thanks, I do not agree"
+                android:gravity="center"
+                android:text="No, thanks"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

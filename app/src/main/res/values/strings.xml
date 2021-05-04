@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HonorsProj-COVID19</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_launch_screen">launch_screen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="local_service_stopped">Broadcast service stopped</string>
+    <string name="local_service_started">Broadcast service started</string>
+    <string name="local_service_label">Broadcast service Notification</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="onboarding_subtitle" />
+    <string name="continue_button" />
+    <string name="onboarding_notifications_text" />
+    <string name="onboarding_isolation_countdown_text" />
+    <string name="onboarding_welcome_title" />
+    <string name="title_activity_data_privacy">data_privacy</string>
+    <string name="title_activity_permission">permission</string>
+    <string name="title_activity_status">status</string>
+    <string name="title_activity_agerequire">agerequire</string>
+    <string name="exposure_notification_recommendation"> You are at high risk of having and spreading the virus even if you do not have any symptoms. If you are under 18, you should show this message to a trusted adult. Your isolation countdown has started and you should self-isolate for the full period identified. Only get a test if you have coronavirus symptoms. </string>
+    <string name="uniqueID">CDB7950D-73F1-4D4D-8E47-C090502DBD6</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id" />
+    <item name="notificationTitle" type="id" />
+    <item name="nav_view" type="id" />
+    <item name="nav_host_fragment" type="id" />
+    <item name="text_dashboard" type="id" />
+    <item name="text_home" type="id" />
+    <item name="text_notifications" type="id" />
+    <item name="fab" type="id" />
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/root_element">
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/ScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/confirmOnboarding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="32dp"
+            android:paddingTop="32dp"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/welcomeTitle"
+                style="@style/Title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="This application helps us keep everyone safe" />
+
+            <TextView
+                android:id="@+id/welcomeSubtitle"
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="You will be helping us and yourself beat COVID-19 by sharing anonymous information about the virus in your region and public health when you use the app." />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/iconNotification"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/ic_onboarding_circle"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_onboarding_notification"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/notificationTitle"
+                    style="@style/Title3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Get Notified"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iconNotification"
+                    app:layout_constraintTop_toTopOf="@id/iconNotification"
+                    android:layout_marginLeft="16dp" />
+
+                <TextView
+                    android:id="@+id/notificationText"
+                    style="@style/Body1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Find out when you have been near other app users who have tested positive for coronavirus"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/notificationTitle"
+                    app:layout_constraintTop_toBottomOf="@id/notificationTitle" />
+
+                <ImageView
+                    android:id="@+id/checkSymptomsIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_onboarding_circle"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_report_symptoms"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/notificationText"/>
+
+                <TextView
+                    android:id="@+id/checkSymptomsTitle"
+                    style="@style/Title3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Check your symptoms"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/checkSymptomsIcon"
+                    app:layout_constraintTop_toTopOf="@id/checkSymptomsIcon" />
+
+                <TextView
+                    android:id="@+id/checkSymptomsText"
+                    style="@style/Body1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="Feeling unwell? Find out whether you could have coronavirus and order a free test if you need one"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/checkSymptomsTitle"
+                    app:layout_constraintTop_toBottomOf="@id/checkSymptomsTitle" />
+
+                <ImageView
+                    android:id="@+id/isolationCountdownIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_onboarding_circle"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_onboarding_countdown"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/checkSymptomsText" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/isolationCountdownTitle"
+                    style="@style/Title3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Statistics"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/isolationCountdownIcon"
+                    app:layout_constraintTop_toTopOf="@id/isolationCountdownIcon" />
+
+                <TextView
+                    android:id="@+id/isolationCountdownText"
+                    style="@style/Body1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="View current worldwide statistics, so that you can keep up to date with current coronavirus statistics."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/isolationCountdownTitle"
+                    app:layout_constraintTop_toBottomOf="@id/isolationCountdownTitle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/confirmOnboarding"
+                style="@style/PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_horizontal"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:layout_marginBottom="@dimen/vertical_margin_large"
+                android:text="Continue"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/container"
+        style="@style/ScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/vertical_margin_large"
+            android:paddingHorizontal="@dimen/margin_horizontal">
+
+            <ImageView
+                style="@style/GoneInLandscape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_isolation_contact" />
+
+            <TextView
+                android:id="@+id/isolationTitle"
+                style="@style/TitleIsolation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Self Isolate For"
+                android:layout_marginTop="@dimen/vertical_margin_large"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/remainingDaysInIsolation"
+                style="@style/Title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="56sp"
+                tools:text="7 days"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_margin"
+                android:text="@string/exposure_notification_recommendation" />
+
+            <Button
+                android:id="@+id/understandButton"
+                style="@style/PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I understand" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

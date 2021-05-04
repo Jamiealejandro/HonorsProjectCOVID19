@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".post_code">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/include_onboarding_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="103dp">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            style="@style/ScrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <TextView
+                android:id="@+id/postCodeTitle"
+                style="@style/Title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/postCodeEditText"
+                android:text="Enter the first part of your postcode (postcode district)"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="@+id/include"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You need a Scottish postcode district to use this app. Example: if your postcode is AB16 FEU, please enter AB16."
+                app:layout_constraintBottom_toTopOf="@+id/postCodeEditText"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+                app:layout_constraintVertical_bias="0.728"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <EditText
+                android:id="@+id/postCodeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="184dp"
+                android:background="@drawable/edit_text_background"
+                android:importantForAutofill="no"
+                android:inputType="textPostalAddress|textCapCharacters"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+                tools:layout_editor_absoluteX="13dp" />
+
+            <TextView
+                android:id="@+id/postCodeRationale"
+                style="@style/Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingHorizontal="@dimen/margin_horizontal"
+                android:text="The pocode district helps with learning about the spread of coronavirus in different areas. This makes sure we can give the best possible health advice for your area. \n\n Don't worry. Your postcode district won't be used to track your location."
+                app:layout_constraintBottom_toBottomOf="@+id/include"
+                app:layout_constraintTop_toBottomOf="@+id/postCodeEditText"
+                tools:ignore="RtlSymmetry"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                style="@style/Title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingHorizontal="32dp"
+                android:text="Why do we need your postcode district?"
+                app:layout_constraintBottom_toTopOf="@+id/postCodeRationale"
+                app:layout_constraintTop_toBottomOf="@+id/postCodeEditText"
+                app:layout_constraintVertical_bias="0.7"
+                tools:ignore="RtlSymmetry"
+                tools:layout_editor_absoluteX="13dp" />
+
+            <Button
+                android:id="@+id/postCodeContinue"
+                style="@style/PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Continue"
+                app:layout_constraintBottom_toBottomOf="@+id/include"
+                app:layout_constraintTop_toBottomOf="@+id/postCodeRationale"
+                app:layout_constraintVertical_bias="0.506"
+                tools:layout_editor_absoluteX="13dp" />
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
